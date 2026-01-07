@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OLEOCEAN Canarias - Omega-3 Premium de Gran Canaria. Nutrición de proximidad, máxima calidad y impacto social verificable.">
+    <meta name="keywords" content="omega-3, EPA, DHA, suplementos, salud cardiovascular, Gran Canaria">
+    <meta name="author" content="OLEOCEAN Canarias">
+    <meta name="theme-color" content="#1a4f5e">
+    <meta property="og:title" content="OLEOCEAN Canarias - Nutrición Premium de Proximidad">
+    <meta property="og:description" content="Omega-3 de máxima biodisponibilidad producido en Gran Canaria">
+    <meta property="og:type" content="business.business">
+    <title>OLEOCEAN Canarias - Omega-3 Premium de Gran Canaria</title>
+    <style>
+        :root {
+            --color-primary: #1a4f5e;
+            --color-primary-light: #2a7a8e;
+            --color-accent-gold: #b8956a;
+            --color-accent-teal: #5ec8d8;
+            --color-text-dark: #1a1a1a;
+            --color-text-light: #666666;
+            --color-bg-light: #f8f8f8;
+            --color-white: #ffffff;
+            --color-border: #e0e0e0;
+            --color-success: #27ae60;
+            --color-warning: #f39c12;
+            --color-error: #e74c3c;
+            --spacing-xs: 8px;
+            --spacing-sm: 12px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-2xl: 48px;
+            --spacing-3xl: 64px;
+            --border-radius-sm: 6px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            --font-family-serif: 'Georgia', 'Garamond', serif;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--color-text-dark);
+            background-color: var(--color-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header y Navegación */
+        header {
+            background-color: var(--color-white);
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            padding: 12px 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--spacing-lg);
+        }
+
+        .logo {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            transition: var(--transition-smooth);
+        }
+
+        .logo:hover img {
+            opacity: 0.85;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }
+
+        nav a {
+            padding: 12px 20px;
+            color: var(--color-text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: var(--transition-smooth);
+            border-bottom: 2px solid transparent;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--color-primary);
+            border-bottom-color: var(--color-accent-gold);
+        }
+
+        nav a.active {
+            color: var(--color-primary);
+            border-bottom-color: var(--color-accent-gold);
+        }
+
+        .cta-header {
+            flex-shrink: 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--border-radius-md);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+            text-align: center;
+            gap: var(--spacing-sm);
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-accent {
+            background-color: var(--color-accent-gold);
+            color: var(--color-white);
+        }
+
+        .btn-accent:hover {
+            background-color: #a0824d;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: var(--color-white);
+            padding: 80px var(--spacing-md) 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-repeat: repeat-x;
+            background-position: 0 100%;
+            opacity: 0.3;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 5vw, 48px);
+            font-weight: 700;
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: clamp(16px, 2vw, 18px);
+            margin-bottom: var(--spacing-xl);
+            line-height: 1.7;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p:first-of-type {
+            font-size: clamp(18px, 3vw, 24px);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-cta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+            justify-content: center;
+            margin-top: var(--spacing-xl);
+        }
+
+        /* Secciones */
+        section {
+            padding: 80px var(--spacing-md);
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: clamp(28px, 4vw, 40px);
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+            color: var(--color-primary);
+            font-weight: 700;
+            position: relative;
+            padding-bottom: var(--spacing-lg);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--color-accent-gold) 50%, transparent);
+        }
+
+        /* Grid sistema */
+        .grid {
+            display: grid;
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .grid-4 {
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+        /* Cards */
+        .card {
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            transition: var(--transition-smooth);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            border-color: var(--color-accent-gold);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: var(--spacing-md);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        .card p {
+            color: var(--color-text-light);
+            font-size: 14px;
+            margin-bottom: var(--spacing-md);
+            flex-grow: 1;
+        }
+
+        /* Beneficios científicos */
+        .benefits-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, rgba(26, 79, 94, 0.05) 0%, rgba(184, 149, 106, 0.05) 100%);
+            padding: var(--spacing-lg);
+            border-left: 4px solid var(--color-accent-gold);
+            border-radius: var(--border-radius-md);
+            transition: var(--transition-smooth);
+        }
+
+        .benefit-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateX(4px);
+        }
+
+        .benefit-card h4 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: var(--color-text-light);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Dosificación */
+        .dosage-section {
+            background-color: var(--color-bg-light);
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+        }
+
+        .dosage-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: var(--spacing-lg);
+        }
+
+        .dosage-table th,
+        .dosage-table td {
+            padding: var(--spacing-md);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+            font-size: 14px;
+        }
+
+        .dosage-table th {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .dosage-table td {
+            background-color: var(--color-white);
+        }
+
+        .dosage-table tr:hover td {
+            background-color: rgba(26, 79, 94, 0.02);
+        }
+
+        /* Calculadora de riesgo cardiovascular */
+        .calculator-section {
+            background: linear-gradient(135deg, rgba(26, 79, 94, 0.08) 0%, rgba(184, 149, 106, 0.08) 100%);
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-border);
+        }
+
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+
+        label {
+            font-weight: 600;
+            color: var(--color-primary);
+            font-size: 14px;
+        }
+
+        input[type="number"],
+        input[type="text"],
+        input[type="email"],
+        select {
+            padding: var(--spacing-md);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-md);
+            font-size: 14px;
+            font-family: inherit;
+            transition: var(--transition-smooth);
+            background-color: var(--color-white);
+        }
+
+        input[type="number"]:focus,
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(26, 79, 94, 0.1);
+        }
+
+        input[type="range"] {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .range-value {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-top: var(--spacing-sm);
+        }
+
+        .calculator-actions {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .result-section {
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-lg);
+            display: none;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        .result-section.show {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .risk-low {
+            background-color: rgba(39, 174, 96, 0.15);
+            border-left: 4px solid var(--color-success);
+        }
+
+        .risk-medium {
+            background-color: rgba(243, 156, 18, 0.15);
+            border-left: 4px solid var(--color-warning);
+        }
+
+        .risk-high {
+            background-color: rgba(231, 76, 60, 0.15);
+            border-left: 4px solid var(--color-error);
+        }
+
+        .result-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .risk-low .result-title {
+            color: var(--color-success);
+        }
+
+        .risk-medium .result-title {
+            color: var(--color-warning);
+        }
+
+        .risk-high .result-title {
+            color: var(--color-error);
+        }
+
+        .recommendations {
+            margin-top: var(--spacing-lg);
+        }
+
+        .recommendation-item {
+            padding: var(--spacing-md);
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: var(--border-radius-md);
+            margin-bottom: var(--spacing-sm);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .recommendation-item::before {
+            content: '✓ ';
+            font-weight: 700;
+            margin-right: var(--spacing-sm);
+        }
+
+        /* Líneas de productos */
+        .product-lines {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .product-line {
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-line:hover {
+            border-color: var(--color-accent-gold);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .product-line-header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: var(--color-white);
+            padding: var(--spacing-lg);
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .product-line-content {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-line-desc {
+            color: var(--color-text-light);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+            flex-grow: 1;
+        }
+
+        /* CRM y Seguimiento */
+        .crm-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .crm-card {
+            background: linear-gradient(135deg, rgba(26, 79, 94, 0.08) 0%, rgba(184, 149, 106, 0.08) 100%);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-border);
+            text-align: center;
+        }
+
+        .crm-card-icon {
+            font-size: 40px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .crm-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .crm-card p {
+            font-size: 13px;
+            color: var(--color-text-light);
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-2xl) var(--spacing-md);
+            text-align: center;
+            margin-top: var(--spacing-3xl);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 14px;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-section a:hover {
+            color: var(--color-accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: var(--spacing-lg);
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        /* Modal de construcción */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-md);
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--color-white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-2xl);
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: modalSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .modal-content h2 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            font-size: 24px;
+        }
+
+        .modal-content p {
+            color: var(--color-text-light);
+            line-height: 1.7;
+            margin-bottom: var(--spacing-lg);
+            font-size: 15px;
+        }
+
+        .modal-close {
+            background: var(--color-accent-gold);
+            color: var(--color-white);
+            border: none;
+            padding: 12px 32px;
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .modal-close:hover {
+            background: #a0824d;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(243, 156, 18, 0.05) 100%);
+            border-left: 4px solid var(--color-warning);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-md);
+            font-size: 12px;
+            color: var(--color-text-light);
+            line-height: 1.6;
+            margin-top: var(--spacing-xl);
+        }
+
+        .disclaimer strong {
+            color: var(--color-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-wrap: wrap;
+                gap: var(--spacing-md);
+                padding: 0 var(--spacing-md);
+            }
+
+            nav {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+
+            nav a {
+                flex: 0 1 calc(50% - 4px);
+                padding: 10px 12px;
+                font-size: 13px;
+                text-align: center;
+            }
+
+            .hero {
+                padding: 60px var(--spacing-md);
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .hero-cta .btn {
+                width: 100%;
+            }
+
+            section {
+                padding: 60px var(--spacing-md);
+            }
+
+            .section-title {
+                font-size: 24px;
+                margin-bottom: var(--spacing-xl);
+            }
+
+            .grid-4 {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .calculator-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 14px;
+            }
+
+            .header-container {
+                gap: var(--spacing-sm);
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            nav {
+                gap: 0;
+            }
+
+            nav a {
+                flex: 0 1 calc(50% - 2px);
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 40px var(--spacing-sm);
+            }
+
+            .hero h1 {
+                font-size: 22px;
+                margin-bottom: var(--spacing-md);
+            }
+
+            .hero p {
+                font-size: 14px;
+                margin-bottom: var(--spacing-lg);
+            }
+
+            section {
+                padding: 40px var(--spacing-sm);
+            }
+
+            .btn {
+                font-size: 13px;
+                padding: 8px 16px;
+            }
+
+            .grid, .grid-2, .grid-3, .grid-4 {
+                gap: var(--spacing-md);
+            }
+
+            .card {
+                padding: var(--spacing-lg);
+            }
+
+            .dosage-table th,
+            .dosage-table td {
+                padding: var(--spacing-sm);
+                font-size: 12px;
+            }
+
+            .calculator-grid {
+                gap: var(--spacing-md);
+            }
+
+            .crm-card {
+                padding: var(--spacing-md);
+            }
+
+            .result-section {
+                padding: var(--spacing-lg);
+            }
+        }
+
+        /* Mejoras de accesibilidad */
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible,
+        select:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-md);
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Animaciones suaves */
+        @media (prefers-reduced-motion: no-preference) {
+            .card, .benefit-card, .product-line {
+                animation: fadeInUp 0.6s ease-out;
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            header, footer, .cta-header {
+                display: none;
+            }
+            body {
+                font-size: 12pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Modal de Construcción -->
+    <div id="constructionModal" class="modal-overlay active">
+        <div class="modal-content">
+            <h2>🚀 Proyecto en Construcción</h2>
+            <p>Estamos desarrollando OLEOCEAN CANARIAS con el máximo estándar de calidad. Esta plataforma integral de salud cardiovascular estará disponible en breve.</p>
+            <p style="margin-bottom: var(--spacing-xl); color: var(--color-primary); font-weight: 600;">Gracias por tu interés en revolucionar la salud desde Canarias.</p>
+            <button class="modal-close" onclick="closeConstructionModal()">Continuar Explorando</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/d9e8f767-0bd6-4510-ab68-7817f9f260fe" alt="OLEOCEAN Canarias - Logo">
+            </div>
+            <nav>
+                <a href="#beneficios" class="nav-link">Beneficios</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#calculadora" class="nav-link">Calculadora</a>
+                <a href="#programa" class="nav-link">Programa</a>
+            </nav>
+            <div class="cta-header">
+                <button class="btn btn-primary" onclick="document.getElementById('programa').scrollIntoView({behavior: 'smooth'});">
+                    Muestra Gratuita
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Nutrición Preventiva de Proximidad desde Gran Canaria</h1>
+            <p><strong>Nuestro Océano, Nuestra Salud</strong></p>
+            <p>Rodeados de océano, desconectados de sus beneficios. OLEOCEAN CANARIAS trae omega-3 de máxima biodisponibilidad producido en Gran Canaria, para que los canarios recuperen la salud que merecen.</p>
+            <p style="font-size: 16px; margin-top: var(--spacing-lg); opacity: 0.9;"><strong>Proximidad • Calidad Verificable • Impacto Social Medible</strong></p>
+            <div class="hero-cta">
+                <button class="btn btn-accent" onclick="document.getElementById('calculadora').scrollIntoView({behavior: 'smooth'});">
+                    Evalúa tu Riesgo Cardiovascular
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('programa').scrollIntoView({behavior: 'smooth'});">
+                    Conoce el Programa
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor -->
+    <section class="section-container" style="padding: 80px var(--spacing-md);">
+        <h2 class="section-title">Una Solución Integral</h2>
+        <div class="grid grid-3">
+            <div class="card">
+                <div class="card-icon">🌊</div>
+                <h3>Proximidad y Frescura</h3>
+                <p>Producción en Gran Canaria con máxima frescura. Índice TOTOX más bajo del mercado. Impacto ambiental reducido.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧪</div>
+                <h3>Calidad Verificable</h3>
+                <p>Softgels microencapsulados, aceites premium, polvos especializados. Formatos para cada necesidad y etapa de vida.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">❤️</div>
+                <h3>Impacto Social</h3>
+                <p>20% de producción para RSC. Distribución en escuelas, hospitales, residencias. Beneficiarios verificables.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Científicos -->
+    <section id="beneficios" style="background-color: var(--color-bg-light);">
+        <div class="section-container">
+            <h2 class="section-title">EPA/DHA: Ciencia Verificable, Impacto Tangible</h2>
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <h4>🧠 Cognición y Neuroprotección</h4>
+                    <p>DHA es componente estructural de neuronas. Mejora cognición en todas las etapas de vida.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>❤️ Salud Cardiovascular</h4>
+                    <p>EPA reduce inflamación sistémica. Mejora perfil lipídico y protege el sistema cardiovascular.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>💪 Rendimiento Físico</h4>
+                    <p>Acelera síntesis proteica y recuperación muscular. Mejora resistencia y bienestar general.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>🛡️ Sistema Inmunológico</h4>
+                    <p>Fortalece sistema inmunológico. Mejora concentración, energía y estabilidad emocional.</p>
+                </div>
+            </div>
+
+            <div style="background: var(--color-white); padding: var(--spacing-xl); border-radius: var(--border-radius-lg); margin-top: var(--spacing-xl); border-left: 4px solid var(--color-accent-gold);">
+                <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Mecanismo de Acción</h3>
+                <p style="color: var(--color-text-light); font-size: 14px; line-height: 1.7;">
+                    EPA y DHA actúan como moléculas anti-inflamatorias. Reducen inflamación sistémica, mejoran fluidez sanguínea y son componentes estructurales de membranas neuronales. Su consumo regular contribuye a la prevención de enfermedades cardiovasculares y el mantenimiento óptimo de funciones cognitivas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dosificación -->
+    <section id="dosificacion">
+        <div class="section-container">
+            <h2 class="section-title">Dosis Recomendada por Etapa de Vida</h2>
+            <div class="dosage-section">
+                <div style="overflow-x: auto;">
+                    <table class="dosage-table">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left;">Etapa de Vida</th>
+                                <th>EPA/DHA Recomendado</th>
+                                <th>Formato</th>
+                                <th>Frecuencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Embarazo y Lactancia</strong></td>
+                                <td style="text-align: center;">200-300mg DHA</td>
+                                <td>Softgels/Líquido</td>
+                                <td>Diariamente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Infancia (0-12 años)</strong></td>
+                                <td style="text-align: center;">100-200mg DHA</td>
+                                <td>Gummies/Softgels</td>
+                                <td>Diariamente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adolescencia (13-18 años)</strong></td>
+                                <td style="text-align: center;">200-300mg EPA+DHA</td>
+                                <td>Softgels/Líquido</td>
+                                <td>Diariamente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adultos (19-50 años)</strong></td>
+                                <td style="text-align: center;">250-500mg EPA+DHA</td>
+                                <td>Softgels/Líquido</td>
+                                <td>Diariamente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adultos mayores (50+ años)</strong></td>
+                                <td style="text-align: center;">500-1000mg EPA+DHA</td>
+                                <td>Softgels/Aceite</td>
+                                <td>Diariamente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Deportistas / Recuperación</strong></td>
+                                <td style="text-align: center;">1000-2000mg EPA+DHA</td>
+                                <td>Concentrado/Aceite</td>
+                                <td>Post-entrenamientos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top: var(--spacing-lg); color: var(--color-text-light); font-size: 13px;">
+                    <em>Nota: Las dosis recomendadas se basan en estudios clínicos y directrices internacionales (OMS, AHA, EFSA). Consulta con un profesional sanitario para recomendaciones personalizadas.</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora de Riesgo Cardiovascular -->
+    <section id="calculadora" style="background-color: var(--color-bg-light);">
+        <div class="section-container">
+            <h2 class="section-title">Herramienta Educativa: Evaluador de Riesgo Cardiovascular</h2>
+            <div class="calculator-section">
+                <p style="text-align: center; color: var(--color-text-light); margin-bottom: var(--spacing-xl); font-size: 14px;">
+                    Esta herramienta educativa te ayudará a evaluar tu perfil de riesgo cardiovascular basándose en factores clave. Parte de nuestro compromiso con la salud preventiva de Canarias.
+                </p>
+
+                <form id="calculator-form" style="margin-top: var(--spacing-xl);">
+                    <div class="calculator-grid">
+                        <!-- Datos Demográficos -->
+                        <div class="form-group">
+                            <label for="age">Edad (años)</label>
+                            <input type="number" id="age" min="18" max="120" value="45" required>
+                            <small style="color: var(--color-text-light); font-size: 12px;">18-120 años</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Género</label>
+                            <select id="gender" required>
+                                <option value="">Selecciona...</option>
+                                <option value="male">Masculino</option>
+                                <option value="female">Femenino</option>
+                            </select>
+                        </div>
+
+                        <!-- Medidas antropométricas -->
+                        <div class="form-group">
+                            <label for="weight">Peso (kg)</label>
+                            <input type="number" id="weight" min="30" max="250" step="0.1" value="70" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="height">Altura (cm)</label>
+                            <input type="number" id="height" min="100" max="250" value="175" required>
+                        </div>
+
+                        <!-- Parámetros cardiovasculares -->
+                        <div class="form-group">
+                            <label for="sbp">Presión Arterial Sistólica (mmHg)</label>
+                            <input type="number" id="sbp" min="80" max="220" value="120" required>
+                            <small style="color: var(--color-text-light); font-size: 12px;">Normal: &lt;120 | Elevada: 120-129 | Alta: ≥130</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dbp">Presión Arterial Diastólica (mmHg)</label>
+                            <input type="number" id="dbp" min="50" max="120" value="80" required>
+                            <small style="color: var(--color-text-light); font-size: 12px;">Normal: &lt;80 | Elevada: ≥80</small>
+                        </div>
+
+                        <!-- Perfil lipídico -->
+                        <div class="form-group">
+                            <label for="total-chol">Colesterol Total (mg/dL)</label>
+                            <input type="number" id="total-chol" min="100" max="400" value="200" required>
+                            <small style="color: var(--color-text-light); font-size: 12px;">Deseable: &lt;200 | Alto: ≥240</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hdl">Colesterol HDL (mg/dL)</label>
+                            <input type="number" id="hdl" min="20" max="100" value="50" required>
+                            <small style="color: var(--color-text-light); font-size: 12px;">Óptimo: ≥60 | Bajo: &lt;40</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ldl">Colesterol LDL (mg/dL)</label>
+                            <input type="number" id="ldl" min="30" max="300" value="130" required>
+                            <small style="color: var(--color-text-light); font-size: 12px;">Óptimo: &lt;100 | Alto: ≥160</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="triglycerides">Triglicéridos (mg/dL)</label>
+                            <input type="number" id="triglycerides" min="30" max="800" value="150" required>
+                            <small style="color: var(--color-text-light); font-size: 12px;">Normal: &lt;150 | Elevado: ≥200</small>
+                        </div>
+
+                        <!-- Glucosa y metabolismo -->
+                        <div class="form-group">
+                            <label for="glucose">Glucosa en ayunas (mg/dL)</label>
+                            <input type="number" id="glucose" min="60" max="300" value="100" required>
+                            <small style="color: var(--color-text-light); font-size: 12px;">Normal: &lt;100 | Prediabetes: 100-125 | Diabetes: ≥126</small>
+                        </div>
+
+                        <!-- Factores de riesgo -->
+                        <div class="form-group">
+                            <label for="smoking">¿Fuma actualmente?</label>
+                            <select id="smoking" required>
+                                <option value="">Selecciona...</option>
+                                <option value="no">No</option>
+                                <option value="yes">Sí, actualmente</option>
+                                <option value="quit">Dejé hace menos de 1 año</option>
+                                <option value="quit-long">Dejé hace más de 1 año</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="diabetes">¿Antecedentes de diabetes?</label>
+                            <select id="diabetes" required>
+                                <option value="">Selecciona...</option>
+                                <option value="no">No</option>
+                                <option value="yes">Sí, diagnosticado</option>
+                                <option value="prediabetes">Prediabetes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="family">¿Antecedentes familiares cardíacos?</label>
+                            <select id="family" required>
+                                <option value="">Selecciona...</option>
+                                <option value="no">No</option>
+                                <option value="yes-before55m">Sí, padre &lt;55 años</option>
+                                <option value="yes-before65f">Sí, madre &lt;65 años</option>
+                                <option value="yes-other">Sí, otros familiares</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hypertension">¿Antecedentes de hipertensión?</label>
+                            <select id="hypertension" required>
+                                <option value="">Selecciona...</option>
+                                <option value="no">No</option>
+                                <option value="controlled">Controlada con medicación</option>
+                                <option value="uncontrolled">No controlada</option>
+                            </select>
+                        </div>
+
+                        <!-- Estilo de vida -->
+                        <div class="form-group">
+                            <label for="activity">Nivel de Actividad Física</label>
+                            <select id="activity" required>
+                                <option value="">Selecciona...</option>
+                                <option value="sedentary">Sedentario (&lt;30 min/semana)</option>
+                                <option value="light">Ligera (30-60 min/semana)</option>
+                                <option value="moderate">Moderada (150 min/semana)</option>
+                                <option value="vigorous">Vigorosa (300+ min/semana)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="alcohol">Consumo de Alcohol</label>
+                            <select id="alcohol" required>
+                                <option value="">Selecciona...</option>
+                                <option value="none">No consume</option>
+                                <option value="moderate">Moderado (1-2 copas/día)</option>
+                                <option value="excessive">Excesivo (&gt;2 copas/día)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stress">Nivel de Estrés Percibido (0-10)</label>
+                            <input type="range" id="stress" min="0" max="10" value="5">
+                            <div class="range-value" id="stress-value">5</div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-actions">
+                        <button type="submit" class="btn btn-primary">Calcular Mi Riesgo</button>
+                        <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                    </div>
+                </form>
+
+                <!-- Disclaimer educativo -->
+                <div class="disclaimer">
+                    <strong>⚠️ Aviso Importante:</strong> Esta herramienta educativa proporciona una evaluación orientativa basada en factores de riesgo generales. 
+                    <strong>No constituye un diagnóstico clínico ni reemplaza la consulta con un profesional sanitario.</strong> 
+                    Los resultados se basan en datos epidemiológicos de referencias clínicas internacionales (AHA, ESC, OMS). 
+                    Para evaluación personalizada de tu riesgo cardiovascular real, consulta con tu médico o cardiólogo.
+                </div>
+
+                <!-- Resultados -->
+                <div id="result-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Líneas de Productos -->
+    <section id="productos">
+        <div class="section-container">
+            <h2 class="section-title">Líneas Especializadas para Cada Necesidad</h2>
+            <div class="product-lines">
+                <div class="product-line">
+                    <div class="product-line-header">👶 OLEOCEAN Kids</div>
+                    <div class="product-line-content">
+                        <p class="product-line-desc">Softgels microencapsulados DHA-dominante. Polvos flavorizados. Fórmulas para embarazo, lactancia e infancia.</p>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: auto;">Ver productos</button>
+                    </div>
+                </div>
+
+                <div class="product-line">
+                    <div class="product-line-header">⚕️ OLEOCEAN Pro Health</div>
+                    <div class="product-line-content">
+                        <p class="product-line-desc">Aceite premium ultra-concentrado. Softgels farmacéuticos. IFOS certified. Para profesionales sanitarios.</p>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: auto;">Ver productos</button>
+                    </div>
+                </div>
+
+                <div class="product-line">
+                    <div class="product-line-header">💪 OLEOCEAN Active</div>
+                    <div class="product-line-content">
+                        <p class="product-line-desc">Softgels 1000mg, polvo recuperación, botellín bebible. Optimizado para post-entrenamiento.</p>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: auto;">Ver productos</button>
+                    </div>
+                </div>
+
+                <div class="product-line">
+                    <div class="product-line-header">🐾 OLEOCEAN Pets</div>
+                    <div class="product-line-content">
+                        <p class="product-line-desc">Concentrado puro. Softgels mascotas. Para longevidad, articulaciones y salud integral.</p>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: auto;">Ver productos</button>
+                    </div>
+                </div>
+
+                <div class="product-line">
+                    <div class="product-line-header">🌈 OLEOCEAN Premium Plus</div>
+                    <div class="product-line-content">
+                        <p class="product-line-desc">Gummies, VCaps veganas, cápsulas entéricas, sprays sublinguales, bebidas funcionales.</p>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: auto;">Ver productos</button>
+                    </div>
+                </div>
+
+                <div class="product-line">
+                    <div class="product-line-header">🛒 OLEOCEAN Shop</div>
+                    <div class="product-line-content">
+                        <p class="product-line-desc">Compra online. Envío a Canarias. Acceso directo a productos premium con garantía de frescura.</p>
+                        <button class="btn btn-accent" style="width: 100%; margin-top: auto;">Ir a la tienda</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programa CRM -->
+    <section id="programa" style="background-color: var(--color-bg-light);">
+        <div class="section-container">
+            <h2 class="section-title">Programa Integral de Salud Cardiovascular</h2>
+            <p style="text-align: center; color: var(--color-text-light); margin-bottom: var(--spacing-xl); max-width: 700px; margin-left: auto; margin-right: auto;">
+                Sé parte de un programa integral que une producto premium, análisis profesional y seguimiento personalizado.
+            </p>
+
+            <div class="crm-section">
+                <div class="crm-card">
+                    <div class="crm-card-icon">📦</div>
+                    <h3>Muestra Gratuita</h3>
+                    <p>Recibe una muestra gratuita de OLEOCEAN CANARIAS y descubre la diferencia de un producto premium.</p>
+                </div>
+
+                <div class="crm-card">
+                    <div class="crm-card-icon">🧬</div>
+                    <h3>Análisis Clínicos</h3>
+                    <p>Análiticas profesionales y asesoramiento personalizado basado en tu perfil de riesgo cardiovascular.</p>
+                </div>
+
+                <div class="crm-card">
+                    <div class="crm-card-icon">👨‍⚕️</div>
+                    <h3>Seguimiento Profesional</h3>
+                    <p>Equipo de salud dedicado a tu bienestar y evolución de indicadores clave.</p>
+                </div>
+
+                <div class="crm-card">
+                    <div class="crm-card-icon">📊</div>
+                    <h3>Dashboard Personal</h3>
+                    <p>Acceso a tu perfil personalizado con recomendaciones dinámicas ajustadas a tu evolución.</p>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); color: var(--color-white); padding: var(--spacing-2xl); border-radius: var(--border-radius-lg); text-align: center; margin-top: var(--spacing-2xl);">
+                <h3 style="font-size: 24px; margin-bottom: var(--spacing-md);">Únete a Miles de Canarios Mejorando su Salud</h3>
+                <p style="margin-bottom: var(--spacing-lg); font-size: 16px; opacity: 0.95;">
+                    Comienza tu viaje hacia una salud cardiovascular óptima con OLEOCEAN CANARIAS.
+                </p>
+                <button class="btn btn-accent" style="font-size: 16px; padding: 12px 32px;" onclick="scrollToForm()">
+                    Solicitar Muestra Gratuita
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>OLEOCEAN CANARIAS</h3>
+                    <ul>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#calculadora">Calculadora</a></li>
+                        <li><a href="#programa">Programa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#about">Acerca de Nosotros</a></li>
+                        <li><a href="#sustainability">Sostenibilidad</a></li>
+                        <li><a href="#social">Impacto Social</a></li>
+                        <li><a href="#science">Ciencia</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Soporte</h3>
+                    <ul>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#faq">Preguntas Frecuentes</a></li>
+                        <li><a href="#shipping">Envíos</a></li>
+                        <li><a href="#returns">Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#privacy">Privacidad</a></li>
+                        <li><a href="#terms">Términos de Uso</a></li>
+                        <li><a href="#cookies">Política de Cookies</a></li>
+                        <li><a href="#disclaimer">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 OLEOCEAN CANARIAS. Todos los derechos reservados. | Producido en Gran Canaria con 🌊 para los canarios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Modal de construcción
+        function closeConstructionModal() {
+            document.getElementById('constructionModal').classList.remove('active');
+        }
+
+        // Cerrar modal con ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('constructionModal').classList.remove('active');
+            }
+        });
+
+        // Actualizar valor del rango de estrés
+        const stressSlider = document.getElementById('stress');
+        const stressValue = document.getElementById('stress-value');
+
+        stressSlider.addEventListener('input', function() {
+            stressValue.textContent = this.value;
+        });
+
+        // Calculadora de riesgo cardiovascular
+        const calculatorForm = document.getElementById('calculator-form');
+        const resultContainer = document.getElementById('result-container');
+
+        // Datos de referencia para el cálculo de riesgo
+        const riskFactors = {
+            age: {
+                male: { low: 40, medium: 60 },
+                female: { low: 50, medium: 70 }
+            },
+            sbp: { low: 120, medium: 140, high: 160 },
+            totalChol: { low: 200, medium: 240 },
+            hdl: { good: 60, borderline: 40 },
+            smoking: { penalty: 15 },
+            diabetes: { penalty: 25 },
+            family: { penalty: 20 },
+            sedentary: { penalty: 15 },
+            overweight: { penalty: 10 },
+            obesity: { penalty: 20 },
+            stress: { perPoint: 1 }
+        };
+
+        function calculateCVRisk(formData) {
+            let riskScore = 0;
+            let riskLevel = 'low';
+            let factors = [];
+
+            // Edad
+            const age = parseInt(formData.age);
+            const gender = formData.gender;
+            const ageRef = riskFactors.age[gender];
+            if (age > ageRef.medium) {
+                riskScore += 30;
+                factors.push('Edad avanzada (+30%)');
+            } else if (age > ageRef.low) {
+                riskScore += 15;
+                factors.push('Edad moderada (+15%)');
+            }
+
+            // Presión arterial sistólica
+            const sbp = parseInt(formData.sbp);
+            if (sbp >= riskFactors.sbp.high) {
+                riskScore += 25;
+                factors.push('Presión arterial elevada (+25%)');
+            } else if (sbp >= riskFactors.sbp.medium) {
+                riskScore += 15;
+                factors.push('Presión arterial borderline (+15%)');
+            }
+
+            // Colesterol total
+            const totalChol = parseInt(formData.totalChol);
+            if (totalChol >= riskFactors.totalChol.medium) {
+                riskScore += 20;
+                factors.push('Colesterol total elevado (+20%)');
+            } else if (totalChol >= riskFactors.totalChol.low) {
+                riskScore += 10;
+                factors.push('Colesterol total borderline (+10%)');
+            }
+
+            // Colesterol HDL
+            const hdl = parseInt(formData.hdl);
+            if (hdl < riskFactors.totalChol.low) {
+                riskScore += 20;
+                factors.push('HDL bajo (colesterol "bueno" bajo) (+20%)');
+            } else if (hdl < riskFactors.hdl.borderline) {
+                riskScore += 10;
+                factors.push('HDL borderline (+10%)');
+            } else {
+                riskScore -= 5;
+                factors.push('HDL óptimo (-5%)');
+            }
+
+            // Tabaquismo
+            if (formData.smoking === 'yes') {
+                riskScore += riskFactors.smoking.penalty;
+                factors.push('Fuma actualmente (+15%)');
+            } else if (formData.smoking === 'quit') {
+                riskScore += 8;
+                factors.push('Ha dejado de fumar hace poco (+8%)');
+            }
+
+            // Diabetes
+            if (formData.diabetes === 'yes') {
+                riskScore += riskFactors.diabetes.penalty;
+                factors.push('Antecedentes de diabetes (+25%)');
+            }
+
+            // Antecedentes familiares
+            if (formData.family === 'yes') {
+                riskScore += riskFactors.family.penalty;
+                factors.push('Antecedentes familiares de enfermedad cardíaca (+20%)');
+            }
+
+            // Actividad física
+            if (formData.activity === 'sedentary') {
+                riskScore += riskFactors.sedentary.penalty;
+                factors.push('Sedentario (+15%)');
+            } else if (formData.activity === 'light') {
+                riskScore += 5;
+                factors.push('Actividad física ligera (+5%)');
+            } else if (formData.activity === 'vigorous') {
+                riskScore -= 15;
+                factors.push('Actividad física vigorosa (-15%)');
+            }
+
+            // IMC
+            if (formData.bmi === 'obese') {
+                riskScore += riskFactors.obesity.penalty;
+                factors.push('Obesidad (+20%)');
+            } else if (formData.bmi === 'overweight') {
+                riskScore += riskFactors.overweight.penalty;
+                factors.push('Sobrepeso (+10%)');
+            } else if (formData.bmi === 'normal') {
+                riskScore -= 5;
+                factors.push('Peso normal (-5%)');
+            }
+
+            // Estrés
+            const stress = parseInt(formData.stress);
+            riskScore += stress * riskFactors.stress.perPoint;
+            factors.push(`Nivel de estrés: ${stress}/10 (+${stress}%)`);
+
+            // Normalizar score entre 0 y 100
+            riskScore = Math.max(0, Math.min(100, riskScore));
+
+            // Determinar nivel de riesgo
+            if (riskScore <= 20) {
+                riskLevel = 'low';
+            } else if (riskScore <= 50) {
+                riskLevel = 'medium';
+            } else {
+                riskLevel = 'high';
+            }
+
+            return {
+                score: Math.round(riskScore),
+                level: riskLevel,
+                factors: factors
+            };
+        }
+
+        function getRecommendations(riskScore, formData) {
+            const recommendations = [];
+
+            // Recomendaciones generales
+            if (parseInt(formData.sbp) >= 140) {
+                recommendations.push('🔴 Consulta con tu médico sobre tu presión arterial. Es importante controlarla regularmente.');
+            }
+
+            if (parseInt(formData.totalChol) >= 240) {
+                recommendations.push('🔴 Tu colesterol total está elevado. Considera cambios dietéticos o medicación tras consulta médica.');
+            }
+
+            if (parseInt(formData.hdl) < 40) {
+                recommendations.push('🟡 Aumenta tu actividad física para mejorar tu colesterol HDL ("bueno").');
+            }
+
+            if (formData.smoking === 'yes') {
+                recommendations.push('🔴 Dejar de fumar es la medida más importante que puedes tomar. Busca apoyo profesional.');
+            }
+
+            if (formData.diabetes === 'yes') {
+                recommendations.push('🔴 Mantén un control estricto de tu glucemia. Seguimiento profesional regular es esencial.');
+            }
+
+            if (formData.activity === 'sedentary') {
+                recommendations.push('🟡 Aumenta tu actividad física gradualmente. Mínimo 150 minutos de actividad moderada por semana.');
+            }
+
+            if (formData.bmi === 'obesity' || formData.bmi === 'overweight') {
+                recommendations.push('🟡 Considera un plan de reducción de peso equilibrado con apoyo nutricional.');
+            }
+
+            if (parseInt(formData.stress) >= 7) {
+                recommendations.push('🟡 Implementa técnicas de manejo del estrés: meditación, yoga o actividad física.');
+            }
+
+            // Recomendaciones específicas de omega-3
+            if (riskScore >= 40) {
+                recommendations.push('✅ OLEOCEAN es ideal para ti: suplementación diaria con EPA/DHA (500-1000mg) puede mejorar tu perfil lipídico.');
+            } else if (riskScore >= 20) {
+                recommendations.push('✅ Considera una suplementación de mantenimiento con OLEOCEAN (250-500mg EPA/DHA diarios).');
+            } else {
+                recommendations.push('✅ Mantén una dosis de prevención con OLEOCEAN (250-500mg EPA/DHA) para optimizar tu salud cardiovascular.');
+            }
+
+            // Recomendación general
+            recommendations.push('📋 Realiza revisiones médicas anuales para un seguimiento completo de tu salud cardiovascular.');
+
+            return recommendations;
+        }
+
+        // Calcular IMC
+        function calculateBMI(weight, height) {
+            const heightInMeters = height / 100;
+            return weight / (heightInMeters * heightInMeters);
+        }
+
+        // Calculadora de riesgo cardiovascular mejorada con datos REALES
+        function calculateCVRisk(formData) {
+            let riskScore = 0;
+            const factors = [];
+            
+            // Calcular IMC
+            const bmi = calculateBMI(formData.weight, formData.height);
+            
+            // 1. EDAD (Factor base según género - Framingham)
+            const age = parseInt(formData.age);
+            if (formData.gender === 'male') {
+                if (age >= 65) riskScore += 35;
+                else if (age >= 55) riskScore += 25;
+                else if (age >= 45) riskScore += 15;
+                else riskScore += 5;
+            } else {
+                if (age >= 75) riskScore += 35;
+                else if (age >= 65) riskScore += 25;
+                else if (age >= 55) riskScore += 15;
+                else riskScore += 5;
+            }
+            factors.push(`Edad (${age} años): ${riskScore}%`);
+            
+            // 2. PRESIÓN ARTERIAL (Sistólica + Diastólica)
+            const sbp = parseInt(formData.sbp);
+            const dbp = parseInt(formData.dbp);
+            if (sbp >= 160 || dbp >= 100) {
+                riskScore += 25;
+                factors.push(`Presión arterial elevada (${sbp}/${dbp}): +25%`);
+            } else if (sbp >= 140 || dbp >= 90) {
+                riskScore += 15;
+                factors.push(`Hipertensión (${sbp}/${dbp}): +15%`);
+            } else if (sbp >= 130 || dbp >= 80) {
+                riskScore += 8;
+                factors.push(`Presión arterial elevada (${sbp}/${dbp}): +8%`);
+            }
+            
+            // 3. PERFIL LIPÍDICO COMPLETO
+            const totalChol = parseInt(formData.totalChol);
+            const hdl = parseInt(formData.hdl);
+            const ldl = parseInt(formData.ldl);
+            const triglycerides = parseInt(formData.triglycerides);
+            
+            // Ratio colesterol total/HDL (Framingham)
+            const cholRatio = (totalChol / hdl).toFixed(1);
+            if (cholRatio > 5) {
+                riskScore += 20;
+                factors.push(`Ratio Colesterol/HDL alto (${cholRatio}): +20%`);
+            } else if (cholRatio > 4) {
+                riskScore += 12;
+                factors.push(`Ratio Colesterol/HDL moderado (${cholRatio}): +12%`);
+            }
+            
+            // LDL
+            if (ldl >= 160) {
+                riskScore += 18;
+                factors.push(`LDL muy elevado (${ldl} mg/dL): +18%`);
+            } else if (ldl >= 130) {
+                riskScore += 10;
+                factors.push(`LDL elevado (${ldl} mg/dL): +10%`);
+            }
+            
+            // Triglicéridos (factor independiente)
+            if (triglycerides >= 400) {
+                riskScore += 22;
+                factors.push(`Triglicéridos muy elevados (${triglycerides} mg/dL): +22%`);
+            } else if (triglycerides >= 200) {
+                riskScore += 15;
+                factors.push(`Triglicéridos elevados (${triglycerides} mg/dL): +15%`);
+            } else if (triglycerides >= 150) {
+                riskScore += 8;
+                factors.push(`Triglicéridos borderline (${triglycerides} mg/dL): +8%`);
+            }
+            
+            // 4. GLUCOSA (Factor Framingham)
+            const glucose = parseInt(formData.glucose);
+            if (glucose >= 126) {
+                riskScore += 20;
+                factors.push(`Diabetes (${glucose} mg/dL): +20%`);
+            } else if (glucose >= 100) {
+                riskScore += 12;
+                factors.push(`Prediabetes (${glucose} mg/dL): +12%`);
+            }
+            
+            // 5. DIABETES Y PREDIABETES
+            if (formData.diabetes === 'yes') {
+                riskScore += 15;
+                factors.push(`Antecedentes de diabetes: +15%`);
+            } else if (formData.diabetes === 'prediabetes') {
+                riskScore += 8;
+                factors.push(`Prediabetes diagnosticada: +8%`);
+            }
+            
+            // 6. HIPERTENSIÓN DIAGNOSTICADA
+            if (formData.hypertension === 'uncontrolled') {
+                riskScore += 18;
+                factors.push(`Hipertensión no controlada: +18%`);
+            } else if (formData.hypertension === 'controlled') {
+                riskScore += 8;
+                factors.push(`Hipertensión controlada: +8%`);
+            }
+            
+            // 7. TABAQUISMO (Factor Framingham - Mayor penalización)
+            if (formData.smoking === 'yes') {
+                riskScore += 30;
+                factors.push(`Tabaquismo activo: +30%`);
+            } else if (formData.smoking === 'quit') {
+                riskScore += 12;
+                factors.push(`Fumador reciente (hace <1 año): +12%`);
+            }
+            
+            // 8. ANTECEDENTES FAMILIARES (Herencia genética)
+            if (formData.family === 'yes-before55m' || formData.family === 'yes-before65f') {
+                riskScore += 22;
+                factors.push(`Antecedentes familiares prematuros: +22%`);
+            } else if (formData.family === 'yes-other') {
+                riskScore += 12;
+                factors.push(`Antecedentes familiares: +12%`);
+            }
+            
+            // 9. IMC (Índice de Masa Corporal)
+            if (bmi >= 30) {
+                riskScore += 18;
+                factors.push(`Obesidad (IMC ${bmi.toFixed(1)}): +18%`);
+            } else if (bmi >= 25) {
+                riskScore += 10;
+                factors.push(`Sobrepeso (IMC ${bmi.toFixed(1)}): +10%`);
+            } else if (bmi < 18.5) {
+                riskScore += 5;
+                factors.push(`Bajo peso (IMC ${bmi.toFixed(1)}): +5%`);
+            } else {
+                riskScore -= 3;
+                factors.push(`Peso normal (IMC ${bmi.toFixed(1)}): -3%`);
+            }
+            
+            // 10. ACTIVIDAD FÍSICA (Factor protector)
+            if (formData.activity === 'sedentary') {
+                riskScore += 20;
+                factors.push(`Sedentarismo: +20%`);
+            } else if (formData.activity === 'light') {
+                riskScore += 8;
+                factors.push(`Actividad física ligera: +8%`);
+            } else if (formData.activity === 'vigorous') {
+                riskScore -= 15;
+                factors.push(`Actividad física regular: -15%`);
+            }
+            
+            // 11. ALCOHOL
+            if (formData.alcohol === 'excessive') {
+                riskScore += 16;
+                factors.push(`Consumo excesivo de alcohol: +16%`);
+            } else if (formData.alcohol === 'moderate') {
+                riskScore -= 5;
+                factors.push(`Consumo moderado de alcohol: -5%`);
+            }
+            
+            // 12. ESTRÉS
+            const stress = parseInt(formData.stress);
+            riskScore += stress * 1.5;
+            factors.push(`Nivel de estrés (${stress}/10): +${(stress * 1.5).toFixed(1)}%`);
+            
+            // Normalizar a 0-100
+            riskScore = Math.max(0, Math.min(100, riskScore));
+            
+            // Determinar nivel
+            let level = 'low';
+            if (riskScore >= 60) level = 'high';
+            else if (riskScore >= 30) level = 'medium';
+            
+            return {
+                score: Math.round(riskScore),
+                level: level,
+                factors: factors,
+                bmi: bmi.toFixed(1)
+            };
+        }
+
+        // Recomendaciones personalizadas mejoradas
+        function getRecommendations(riskScore, formData, bmi) {
+            const recommendations = [];
+            
+            // Alertas críticas
+            if (parseInt(formData.sbp) >= 160 || parseInt(formData.dbp) >= 100) {
+                recommendations.push('🔴 <strong>URGENTE:</strong> Tu presión arterial es muy elevada. Consulta inmediatamente con tu médico.');
+            }
+            
+            if (riskScore >= 60) {
+                recommendations.push('🔴 <strong>RIESGO ALTO:</strong> Se recomienda evaluación urgente con cardiólogo y seguimiento especializado.');
+            }
+            
+            if (formData.smoking === 'yes') {
+                recommendations.push('🔴 <strong>Dejar de fumar es PRIORITARIO.</strong> Reduce tu riesgo hasta un 50% en 1 año. Busca apoyo profesional.');
+            }
+            
+            // Modificaciones de estilo de vida
+            if (parseInt(formData.glucose) >= 100 || formData.diabetes !== 'no') {
+                recommendations.push('🟡 Control estricto de glucemia. Dieta baja en carbohidratos refinados, monitoreo regular.');
+            }
+            
+            if (bmi >= 25) {
+                recommendations.push(`🟡 Plan de reducción de peso: Objetivo IMC <25. Pérdida gradual de 0.5-1 kg/semana.`);
+            }
+            
+            if (formData.activity === 'sedentary') {
+                recommendations.push('🟡 <strong>Incrementar actividad física:</strong> Mínimo 150 min/semana de actividad moderada (caminar, nadar) + 2 sesiones de fortalecimiento.');
+            }
+            
+            if (parseInt(formData.totalChol) >= 240 || parseInt(formData.ldl) >= 160) {
+                recommendations.push('🟡 Revisar dieta: Reducir grasas saturadas (<7% de calorías), aumentar fibra soluble, considerar farmacoterapia.');
+            }
+            
+            if (parseInt(formData.triglycerides) >= 200) {
+                recommendations.push('🟡 Triglicéridos elevados: Limitar azúcares refinados y alcohol, aumentar Omega-3 EPA (pescado azul, OLEOCEAN).');
+            }
+            
+            if (parseInt(formData.stress) >= 7) {
+                recommendations.push('🟡 <strong>Manejo del estrés:</strong> Meditación 10-15 min/día, yoga, actividades relajantes, dormir 7-8 horas.');
+            }
+            
+            // Recomendaciones OLEOCEAN personalizadas
+            if (riskScore >= 50) {
+                recommendations.push('✅ <strong>OLEOCEAN RECOMENDADO:</strong> Suplementación diaria de 1000-2000mg EPA+DHA para cardioprotección. Estudios demuestran reducción de triglicéridos hasta 30%.');
+            } else if (riskScore >= 30) {
+                recommendations.push('✅ <strong>OLEOCEAN MANTENIMIENTO:</strong> 500-1000mg EPA+DHA diarios para optimizar perfil lipídico y salud cardiovascular.');
+            } else {
+                recommendations.push('✅ <strong>OLEOCEAN PREVENCIÓN:</strong> 250-500mg EPA+DHA diarios como estrategia preventiva de salud cardiovascular óptima.');
+            }
+            
+            // Monitoreo
+            recommendations.push('📋 <strong>Seguimiento:</strong> Analíticas de control cada 3-6 meses. Derivación a especialista si cambios significativos.');
+            recommendations.push('💬 <strong>Consulta profesional:</strong> Este análisis es educativo. Para evaluación real de riesgo, consulta con tu médico o cardiólogo.');
+            
+            return recommendations;
+        }
+
+        calculatorForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = {
+                age: document.getElementById('age').value,
+                gender: document.getElementById('gender').value,
+                weight: document.getElementById('weight').value,
+                height: document.getElementById('height').value,
+                sbp: document.getElementById('sbp').value,
+                dbp: document.getElementById('dbp').value,
+                totalChol: document.getElementById('total-chol').value,
+                hdl: document.getElementById('hdl').value,
+                ldl: document.getElementById('ldl').value,
+                triglycerides: document.getElementById('triglycerides').value,
+                glucose: document.getElementById('glucose').value,
+                smoking: document.getElementById('smoking').value,
+                diabetes: document.getElementById('diabetes').value,
+                family: document.getElementById('family').value,
+                hypertension: document.getElementById('hypertension').value,
+                activity: document.getElementById('activity').value,
+                alcohol: document.getElementById('alcohol').value,
+                stress: document.getElementById('stress').value
+            };
+
+            const result = calculateCVRisk(formData);
+            const bmi = calculateBMI(formData.weight, formData.height);
+            const recommendations = getRecommendations(result.score, formData, bmi);
+
+            let riskTitle = '';
+            let riskDescription = '';
+
+            if (result.level === 'low') {
+                riskTitle = '✅ Riesgo Cardiovascular BAJO';
+                riskDescription = 'Tu perfil indica un riesgo cardiovascular bajo. Mantén estos hábitos saludables, realiza chequeos anuales.';
+            } else if (result.level === 'medium') {
+                riskTitle = '🟡 Riesgo Cardiovascular MODERADO';
+                riskDescription = 'Tu perfil indica riesgo moderado. Implementa cambios en estilo de vida, seguimiento médico recomendado cada 6 meses.';
+            } else {
+                riskTitle = '🔴 Riesgo Cardiovascular ALTO';
+                riskDescription = 'Tu perfil indica riesgo alto. Consulta urgentemente con cardiólogo y médico especialista para evaluación completa.';
+            }
+
+            const resultHTML = `
+                <div class="result-section show risk-${result.level}" style="margin-top: var(--spacing-xl);">
+                    <div class="result-title">${riskTitle}</div>
+                    <p style="margin-bottom: var(--spacing-lg); font-size: 15px; line-height: 1.6;">${riskDescription}</p>
+
+                    <div style="background: rgba(255, 255, 255, 0.7); padding: var(--spacing-lg); border-radius: var(--border-radius-md); margin-bottom: var(--spacing-lg);">
+                        <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md); font-size: 16px; font-weight: 600;">Score de Riesgo: <span style="font-size: 24px;">${result.score}</span>/100</h4>
+                        <div style="width: 100%; height: 24px; background: rgba(0, 0, 0, 0.1); border-radius: 12px; overflow: hidden; margin-top: var(--spacing-md);">
+                            <div style="width: ${result.score}%; height: 100%; background: linear-gradient(90deg, #27ae60, #f39c12, #e74c3c); transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);"></div>
+                        </div>
+                        <p style="margin-top: var(--spacing-md); font-size: 13px; color: var(--color-text-light);">
+                            IMC: <strong>${result.bmi}</strong> | Categoría: 
+                            ${result.bmi < 18.5 ? 'Bajo peso' : result.bmi < 25 ? 'Normal' : result.bmi < 30 ? 'Sobrepeso' : 'Obesidad'}
+                        </p>
+                    </div>
+
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md); font-size: 15px; font-weight: 600;">Análisis de Factores de Riesgo:</h4>
+                    <div style="background: rgba(255, 255, 255, 0.5); padding: var(--spacing-lg); border-radius: var(--border-radius-md); margin-bottom: var(--spacing-lg);">
+                        ${result.factors.map(factor => `<p style="margin-bottom: var(--spacing-sm); font-size: 13px; line-height: 1.5;">📊 ${factor}</p>`).join('')}
+                    </div>
+
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md); font-size: 15px; font-weight: 600;">Recomendaciones Personalizadas Basadas en tu Perfil:</h4>
+                    <div class="recommendations">
+                        ${recommendations.map(rec => `<div class="recommendation-item">${rec}</div>`).join('')}
+                    </div>
+                    
+                    <div class="disclaimer" style="margin-top: var(--spacing-lg);">
+                        <strong>Nota:</strong> Este resultado es una evaluación orientativa únicamente. No constituye diagnóstico clínico. 
+                        Los cálculos se basan en algoritmos de riesgo validados (Framingham, AHA/ACC). 
+                        <strong>Consulta siempre con tu médico o cardiólogo para interpretación personalizada.</strong>
+                    </div>
+                </div>
+            `;
+
+            resultContainer.innerHTML = resultHTML;
+            resultContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        // Reset form
+        calculatorForm.addEventListener('reset', function() {
+            resultContainer.innerHTML = '';
+            stressValue.textContent = '5';
+        });
+
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Cambio de nav activa
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a.nav-link');
+
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function scrollToForm() {
+            document.getElementById('programa').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
